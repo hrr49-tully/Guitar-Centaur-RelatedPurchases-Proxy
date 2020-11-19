@@ -1,0 +1,12 @@
+[submodule "services/Guitar-Centaur-Add-to-Cart"]
+	path = services/Guitar-Centaur-Add-to-Cart
+	url = https://github.com/hrr49-tully/Guitar-Centaur-Add-to-Cart
+[submodule "services/Guitar-Centaur-Related-Purchases-Service"]
+	path = services/Guitar-Centaur-Related-Purchases-Service
+	url = https://github.com/hrr49-tully/Guitar-Centaur-RelatedPurchases-Service
+[submodule "services/Guitar-Centaur-Reviews-Service"]
+	path = services/Guitar-Centaur-Reviews-Service
+	url = https://github.com/hrr49-tully/Guitar-Centaur-Reviews-Service.git
+[submodule "services/Guitar-Centaur-Carousel-Service"]
+	path = services/Guitar-Centaur-Carousel-Service
+	url = https://github.com/hrr49-tully/Guitar-Centaur-Carousel-Service.git
