@@ -42,22 +42,22 @@
 
 module.exports = {
   service1: {
-    api: '/',
+    api: '/related',
     url: 'http://localhost:3001',
-    bundle: 'app.js',
+    bundle: 'service1.js',
   },
   service2: {
-    api: '/',
+    api: '/c',
     url: 'http://localhost:3002',
     bundle: 'app.js',
   },
   service3: {
-    api: '/',
+    api: '/b',
     url: 'http://localhost:3003',
     bundle: 'app.js',
   },
   service4: {
-    api: '/',
+    api: '/z',
     url: 'http://localhost:3004',
     bundle: 'app.js',
   },
