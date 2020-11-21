@@ -1,0 +1,14 @@
+#wrapper {
+  max-width: 1024px;
+  margin: auto;
+}
+
+#topSplitContainer {
+  display: flex;
+}
+
+#topSplitContainer > div {
+  flex: 50%;
+  background-color: grey;
+  border: 1px solid red;
+}

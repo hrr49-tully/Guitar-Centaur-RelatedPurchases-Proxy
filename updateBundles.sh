@@ -8,7 +8,7 @@ npm install
 
 # Guitar-Centaur-RelatedPurchases-Service
 cd $current_dir/services/Guitar-Centaur-Related-Purchases-Service
-git pull origin main
+git pull origin jw-integration
 npm install
 sudo mariadb -u root < schema.sql
 npm run seeder
@@ -37,8 +37,13 @@ cp public/bundle.js ../../public/bundles/service3.js
 cd ../
 
 # Guitar-Centaur-Reviews-Service.git
-
-
-
+cd ./Guitar-Centaur-Reviews-Service
+git pull origin jw-integration
+npm install
+sudo mariadb -u root < server/db/schema.sql
+npm run seeder
+npm run build
+cp client/dist/bundle.js ../../public/bundles/service4.js
+cd ../
 
 cd ../
