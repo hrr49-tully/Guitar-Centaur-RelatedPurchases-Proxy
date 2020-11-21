@@ -8,7 +8,7 @@ npm install
 
 # Guitar-Centaur-RelatedPurchases-Service
 cd $current_dir/services/Guitar-Centaur-Related-Purchases-Service
-git pull origin main
+git pull origin jw-integration
 npm install
 sudo mariadb -u root < schema.sql
 npm run seeder

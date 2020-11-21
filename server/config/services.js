@@ -47,17 +47,17 @@ module.exports = {
     bundle: 'service1.js',
   },
   service2: {
-    api: '/c',
+    api: '/carousel',
     url: 'http://localhost:3002',
     bundle: 'app.js',
   },
   service3: {
-    api: '/b',
+    api: '/cart',
     url: 'http://localhost:3003',
     bundle: 'app.js',
   },
   service4: {
-    api: '/z',
+    api: '/reviews',
     url: 'http://localhost:3004',
     bundle: 'app.js',
   },
