@@ -13,7 +13,6 @@ npm install
 sudo mariadb -u root < schema.sql
 npm run seeder
 npm run client
-cp public/bundles/service1.js ../../public/bundles/service1.js
 cd ../
 
 # Guitar-Centaur-Carousel-Service
@@ -23,7 +22,6 @@ npm install
 sudo mariadb -u root < server/db/schema.sql
 npm run seeder
 npm run build
-cp public/bundle.js ../../public/bundles/service2.js
 cd ../
 
 # Guitar-Centaur-Add-to-Cart
@@ -33,7 +31,6 @@ npm install
 sudo mariadb -u root < server/schema.sql
 npm run seed
 npm run build
-cp public/bundle.js ../../public/bundles/service3.js
 cd ../
 
 # Guitar-Centaur-Reviews-Service.git
@@ -43,7 +40,6 @@ npm install
 sudo mariadb -u root < server/db/schema.sql
 npm run seeder
 npm run build
-cp client/dist/bundle.js ../../public/bundles/service4.js
 cd ../
 
 cd ../
