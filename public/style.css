@@ -1,13 +1,75 @@
-#wrapper {
-  max-width: 1024px;
+body {
+  max-width: 1500px;
   margin: auto;
 }
 
-#topSplitContainer {
-  display: flex;
+#wrapper {
+  display: grid;
+  column-gap: 1em;
+  row-gap: 1em;
+  margin: 0 auto;
 }
 
-#topSplitContainer > div {
-  flex: 50%;
-  border: 1px solid red;
+#service2 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  max-width: 700px;
+}
+
+#service3 {
+  padding-top: 12em;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+#service3 > div > div:nth-child(1) {
+  min-width: 500px;
+}
+
+#service3 > div > div:nth-child(2) {
+  min-width: 300px;
+  margin-left: 1em;
+}
+
+
+#service1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+#service4 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+@media only screen and (max-width: 600px) {
+  #service2 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  #service3 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  #service3 > div > div {
+    min-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    width: 100%;
+    overflow: hidden;
+    margin: auto;
+  }
+
+  #service3 > div > div {
+    min-width: 100%;
+  }
+
+  #service1, #service2, #service3, #service4 {
+    display: block;
+  }
 }
