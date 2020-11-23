@@ -48,7 +48,7 @@ module.exports = {
   },
   service2: {
     api: ['/items', '/photos'],
-    url: 'http://localhost:3002',
+    url: 'http://54.214.116.240:3000',
     bundle: 'bundle.js',
   },
   service3: {
