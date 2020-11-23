@@ -43,7 +43,7 @@
 module.exports = {
   service1: {
     api: '/related',
-    url: 'http://localhost:3001',
+    url: 'http://ec2-18-219-22-8.us-east-2.compute.amazonaws.com:3001',
     bundle: 'bundle.js',
   },
   service2: {
