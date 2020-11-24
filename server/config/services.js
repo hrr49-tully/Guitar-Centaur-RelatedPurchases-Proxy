@@ -42,18 +42,18 @@
 
 module.exports = {
   service1: {
-    api: '/related',
-    url: 'http://ec2-18-219-22-8.us-east-2.compute.amazonaws.com:3001',
-    bundle: 'bundle.js',
-  },
-  service2: {
     api: ['/items', '/photos'],
     url: 'http://54.214.116.240:3000',
     bundle: 'bundle.js',
   },
-  service3: {
+  service2: {
     api: ['/values', '/styles'],
-    url: 'http://localhost:3003',
+    url: 'http://ec2-54-214-116-240.us-west-2.compute.amazonaws.com:3000',
+    bundle: 'bundle.js',
+  },
+  service3: {
+    api: '/related',
+    url: 'http://ec2-18-219-22-8.us-east-2.compute.amazonaws.com:3003',
     bundle: 'bundle.js',
   },
   service4: {
