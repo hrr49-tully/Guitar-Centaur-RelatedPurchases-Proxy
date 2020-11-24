@@ -1,9 +1,11 @@
 body {
-  max-width: 1500px;
+  max-width: 1080px;
   margin: auto;
+  overflow-x: hidden;
 }
 
 #wrapper {
+  width: 100%;
   display: grid;
   column-gap: 1em;
   row-gap: 1em;
@@ -13,28 +15,46 @@ body {
 #service1 {
   grid-column-start: 1;
   grid-column-end: 3;
-  max-width: 700px;
+  max-width: 450px;
+  overflow: hidden;
+  margin-left: 0;
+}
+
+#service1 h1 {
+  margin-left: 0;
+  min-width: 0;
+}
+
+#service1 > div > div:nth-child(2) >div > div > span {
+  margin-left: 0;
+}
+
+#service1 > div > div:nth-child(2) > div > div:nth-child(2) > span:nth-child(2) {
+  display: none;
 }
 
 #ATC {
   padding-top: 12em;
   grid-column-start: 3;
   grid-column-end: 4;
+  max-width: 900px;
+  overflow: hidden;
 }
 
 #ATC > div > div:nth-child(1) {
-  min-width: 500px;
+  min-width: 300px;
+  margin-right: 1em;
 }
 
 #ATC > div > div:nth-child(2) {
   min-width: 300px;
-  margin-left: 1em;
 }
 
 
 #service3 {
   grid-column-start: 1;
   grid-column-end: 4;
+  max-width: 1080px;
 }
 
 #service4 {
