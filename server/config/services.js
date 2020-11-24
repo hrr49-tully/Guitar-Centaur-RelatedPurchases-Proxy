@@ -48,7 +48,7 @@ module.exports = {
   },
   service2: {
     api: ['/values', '/styles'],
-    url: 'http://ec2-54-214-116-240.us-west-2.compute.amazonaws.com:3000',
+    url: 'http://107.22.130.204:3003',
     bundle: 'bundle.js',
   },
   service3: {
