@@ -58,7 +58,7 @@ module.exports = {
   },
   service4: {
     api: ['/:endpoint', '/guitar/reviews'],
-    url: 'http://localhost:3004',
+    url: 'http://ec2-18-219-89-193.us-east-2.compute.amazonaws.com:3004',
     bundle: 'bundle.js',
   },
 };
