@@ -10,6 +10,7 @@ body {
   column-gap: 1em;
   row-gap: 1em;
   margin: 0 auto;
+  max-width: 1080px;
 }
 
 #service1 {
@@ -64,6 +65,7 @@ body {
 #service4 {
   grid-column-start: 1;
   grid-column-end: 4;
+  max-width: 1080px;
 }
 
 @media only screen and (max-width: 600px) {
