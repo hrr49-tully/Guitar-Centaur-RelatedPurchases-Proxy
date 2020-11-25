@@ -81,6 +81,12 @@ body {
   max-width: 1080px;
 }
 
+@media only screen and (max-width: 935px) {
+  #ATC > div > div:nth-child(2) > div > div:last-child > div {
+    width: 300px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   #service1 {
     grid-column-start: 1;
