@@ -44,13 +44,26 @@ body {
 
 #ATC > div > div:nth-child(1) {
   min-width: 300px;
-  margin-right: 1em;
+  margin-right: 1.5em;
 }
 
-#ATC > div > div:nth-child(2) {
+#ATC > div > div:nth-child(1) > ul {
+  margin-top: 7.5em;
+}
+
+#ATC > div > div:nth-child(1) > div:last-child {
+  position: relative;
+  top: -12.5em;
+}
+
+#ATC > div > div:nth-child(2) > div {
   min-width: 300px;
+  padding-bottom: 10em;
 }
 
+#ATC > div > ul {
+  margin-top: 2em;
+}
 
 #service3 {
   grid-column-start: 1;
