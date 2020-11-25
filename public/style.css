@@ -57,6 +57,10 @@ body {
   max-width: 1080px;
 }
 
+#service3 #relatedPurchasesSlider > div > div ul li {
+  display: flex !important;
+}
+
 #service4 {
   grid-column-start: 1;
   grid-column-end: 4;
