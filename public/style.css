@@ -1,59 +1,104 @@
 body {
-  max-width: 1500px;
+  max-width: 1080px;
   margin: auto;
+  overflow-x: hidden;
 }
 
 #wrapper {
+  width: 100%;
   display: grid;
   column-gap: 1em;
   row-gap: 1em;
   margin: 0 auto;
+  max-width: 1080px;
 }
-
-#service2 {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  max-width: 700px;
-}
-
-#service3 {
-  padding-top: 12em;
-  grid-column-start: 3;
-  grid-column-end: 4;
-}
-
-#service3 > div > div:nth-child(1) {
-  min-width: 500px;
-}
-
-#service3 > div > div:nth-child(2) {
-  min-width: 300px;
-  margin-left: 1em;
-}
-
 
 #service1 {
   grid-column-start: 1;
+  grid-column-end: 3;
+  max-width: 450px;
+  overflow: hidden;
+  margin-left: 0;
+}
+
+#service1 h1 {
+  margin-left: 0;
+  min-width: 0;
+}
+
+#service1 > div > div:nth-child(2) >div > div > span {
+  margin-left: 0;
+}
+
+#service1 > div > div:nth-child(2) > div > div:nth-child(2) > span:nth-child(2) {
+  display: none;
+}
+
+#ATC {
+  padding-top: 12em;
+  grid-column-start: 3;
   grid-column-end: 4;
+  max-width: 900px;
+  overflow: hidden;
+}
+
+#ATC > div > div:nth-child(1) {
+  min-width: 300px;
+  margin-right: 1.5em;
+}
+
+#ATC > div > div:nth-child(1) > ul {
+  margin-top: 7.5em;
+}
+
+#ATC > div > div:nth-child(1) > div:last-child {
+  position: relative;
+  top: -12.5em;
+}
+
+#ATC > div > div:nth-child(2) > div {
+  min-width: 300px;
+  padding-bottom: 10em;
+}
+
+#ATC > div > ul {
+  margin-top: 2em;
+}
+
+#service3 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  max-width: 1080px;
+}
+
+#service3 #relatedPurchasesSlider > div > div ul li {
+  display: flex !important;
 }
 
 #service4 {
   grid-column-start: 1;
   grid-column-end: 4;
+  max-width: 1080px;
+}
+
+@media only screen and (max-width: 935px) {
+  #ATC > div > div:nth-child(2) > div > div:last-child > div {
+    width: 300px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-  #service2 {
+  #service1 {
     grid-column-start: 1;
     grid-column-end: 4;
   }
 
-  #service3 {
+  #ATC {
     grid-column-start: 1;
     grid-column-end: 4;
   }
 
-  #service3 > div > div {
+  #ATC > div > div {
     min-width: 100%;
   }
 }
@@ -64,12 +109,12 @@ body {
     margin: auto;
   }
 
-  #service3 > div > div:nth-child(2) {
+  #ATC > div > div:nth-child(2) {
     width: 100%;
     float: none;
   }
 
-  #service1, #service2, #service3, #service4, #service1 h3, #service3 > div > div, #service3 > div {
+  #service3, #service1, #service3, #service4, #service3 h3, #ATC > div > div, #ATC > div {
     display: block;
     width: 100%;
   }
