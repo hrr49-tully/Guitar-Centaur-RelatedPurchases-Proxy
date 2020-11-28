@@ -1,5 +1,5 @@
 body {
-  max-width: 1080px;
+  max-width: 1500px;
   margin: auto;
   overflow-x: hidden;
 }
@@ -10,7 +10,7 @@ body {
   column-gap: 1em;
   row-gap: 1em;
   margin: 0 auto;
-  max-width: 1080px;
+  max-width: 1500px;
 }
 
 #service1 {
@@ -48,17 +48,12 @@ body {
 }
 
 #ATC > div > div:nth-child(1) > ul {
-  margin-top: 7.5em;
-}
-
-#ATC > div > div:nth-child(1) > div:last-child {
-  position: relative;
-  top: -12.5em;
+  max-width: 100px;
+  display: block;
 }
 
 #ATC > div > div:nth-child(2) > div {
   min-width: 300px;
-  padding-bottom: 10em;
 }
 
 #ATC > div > ul {
@@ -81,9 +76,10 @@ body {
   max-width: 1080px;
 }
 
-@media only screen and (max-width: 935px) {
-  #ATC > div > div:nth-child(2) > div > div:last-child > div {
-    width: 300px;
+@media only screen and (max-width: 1279px) {
+  #ATC > div > div:nth-child(2) > div > div:nth-child(7) > div {
+    position: relative;
+    top: 11em;
   }
 }
 
@@ -101,6 +97,11 @@ body {
   #ATC > div > div {
     min-width: 100%;
   }
+
+  #ATC > div > div:nth-child(2) > div > div:nth-child(7) > div {
+    position: relative;
+    top: 5.5em;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -109,9 +110,10 @@ body {
     margin: auto;
   }
 
-  #ATC > div > div:nth-child(2) {
+  #ATC > div > div:nth-child(2) > div {
     width: 100%;
     float: none;
+    max-width: 438px;
   }
 
   #service3, #service1, #service3, #service4, #service3 h3, #ATC > div > div, #ATC > div {
